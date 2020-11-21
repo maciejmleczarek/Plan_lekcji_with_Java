@@ -1,0 +1,50 @@
+package strukturaszkoly;
+
+import java.util.List;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.BFB0710D-936D-6021-9CB6-EDDDC80E46C1]
+// </editor-fold> 
+public class SchoolYear {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.6152368E-83FD-537F-8966-EC4D0F5E1FEA]
+    // </editor-fold> 
+    private List<SchoolSubject> mSchoolSubject;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.6A967D26-C58F-535B-BE1F-10D652CC02D1]
+    // </editor-fold> 
+    private List<SchoolGroup> mSchoolGroup;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.F308ECFE-427A-3867-734F-97F9742E5435]
+    // </editor-fold> 
+    public List getSchoolGroup () {
+        return mSchoolGroup;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.0B1FEB36-9EA3-8FAE-5A30-1D37EDD6A2B3]
+    // </editor-fold> 
+    public void setSchoolGroup (List val) {
+        this.mSchoolGroup = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.80CC72EF-AEAA-9EF8-F98E-81E86EF12C9B]
+    // </editor-fold> 
+    public List getSchoolSubject () {
+        return mSchoolSubject;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.689E33F0-65ED-8D18-46E7-930BC4BFEADC]
+    // </editor-fold> 
+    public void setSchoolSubject (List val) {
+        this.mSchoolSubject = val;
+    }
+
+}
+

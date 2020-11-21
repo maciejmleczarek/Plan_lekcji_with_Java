@@ -1,0 +1,9 @@
+import strukturaszkoly.SchoolSubject; 
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.B567F14E-F574-7E9D-4151-3DA5C94164E9]
+// </editor-fold> 
+public class Language extends SchoolSubject {
+
+}
+

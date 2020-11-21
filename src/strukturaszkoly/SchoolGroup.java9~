@@ -1,0 +1,47 @@
+package strukturaszkoly;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.1A593E2E-18B8-F6DD-3961-5D19D14C0434]
+// </editor-fold> 
+public class SchoolGroup {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.36A85F76-DABE-6D37-14F3-1F477BA7E241]
+    // </editor-fold> 
+    private String groupName;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.6981D622-60B9-9AC7-514C-BEB9E7E3E432]
+    // </editor-fold> 
+    private SchoolSubject mLanguageSubject;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.37F370A4-0C68-4523-5A37-CF8DA485F02C]
+    // </editor-fold> 
+    public SchoolSubject getLanguageSubject () {
+        return null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.903FA76A-ACBA-D732-D01E-57A618F8BD03]
+    // </editor-fold> 
+    public void setLanguageSubject (SchoolSubject val) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.2D5405C9-4AC9-207E-AA4D-312F93A82AB0]
+    // </editor-fold> 
+    public String getGroupName () {
+        return groupName;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C28D8435-E41E-EDE8-2893-A56E0503E8A6]
+    // </editor-fold> 
+    public void setGroupName (String val) {
+        this.groupName = val;
+    }
+
+}
+

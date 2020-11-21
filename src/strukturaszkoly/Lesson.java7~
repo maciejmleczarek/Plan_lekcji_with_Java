@@ -1,0 +1,67 @@
+package strukturaszkoly;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.07F0E8A5-8528-AD2E-257B-36BAA3935275]
+// </editor-fold> 
+public class Lesson {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.73D01A66-222E-8481-3906-4AE1E3516F61]
+    // </editor-fold> 
+    private Teacher mTeacher;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.49D49501-A81D-3D0D-CFFF-101A4C58B7C4]
+    // </editor-fold> 
+    private SchoolSubject mSchoolSubject;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.7401E608-7B42-0581-E8DC-D10D748BC6A4]
+    // </editor-fold> 
+    private SchoolGroup mSchoolGroup;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.966A0C17-B4CB-34AA-0B37-793E1A21C29E]
+    // </editor-fold> 
+    public SchoolGroup getSchoolGroup () {
+        return mSchoolGroup;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.E3DFE759-207F-4BAE-5EFD-116CC41DACC2]
+    // </editor-fold> 
+    public void setSchoolGroup (SchoolGroup val) {
+        this.mSchoolGroup = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.A31E9E58-C4C0-E2F4-D511-7AA061E69534]
+    // </editor-fold> 
+    public SchoolSubject getSchoolSubject () {
+        return mSchoolSubject;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.343982C3-3AC5-5B1E-45A0-B0009A2747F8]
+    // </editor-fold> 
+    public void setSchoolSubject (SchoolSubject val) {
+        this.mSchoolSubject = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C26DA533-CEF5-CE1B-3153-41E5ABEB39D0]
+    // </editor-fold> 
+    public Teacher getTeacher () {
+        return mTeacher;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.42C11885-D9BF-C55A-219E-CC43FE0AEF1E]
+    // </editor-fold> 
+    public void setTeacher (Teacher val) {
+        this.mTeacher = val;
+    }
+
+}
+

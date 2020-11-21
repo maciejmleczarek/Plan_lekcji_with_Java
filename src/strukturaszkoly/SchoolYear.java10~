@@ -1,0 +1,70 @@
+package strukturaszkoly;
+
+import java.util.List; 
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.BFB0710D-936D-6021-9CB6-EDDDC80E46C1]
+// </editor-fold> 
+public class SchoolYear {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.BACDBB7A-4E26-8541-D095-5394A2DC6462]
+    // </editor-fold> 
+    private int yearName;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.1AA9D473-9B5A-91AE-629E-2EBD1265208D]
+    // </editor-fold> 
+    private List<SchoolSubject> mSchoolSubject;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.4A03D73B-6A73-48DE-5D38-F45702536C16]
+    // </editor-fold> 
+    private List<SchoolGroup> mSchoolGroup;
+public SchoolYear(int yearName, SchoolGroup schoolGroupName, SchoolSubject schoolSubjectName) {
+    this.yearName=yearName;
+    this.mSchoolGroup.add(schoolGroupName);
+    this.mSchoolSubject.add(schoolSubjectName);
+}
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.F308ECFE-427A-3867-734F-97F9742E5435]
+    // </editor-fold> 
+    public List getSchoolGroup () {
+        return null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.0B1FEB36-9EA3-8FAE-5A30-1D37EDD6A2B3]
+    // </editor-fold> 
+    public void setSchoolGroup (List val) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.80CC72EF-AEAA-9EF8-F98E-81E86EF12C9B]
+    // </editor-fold> 
+    public List getSchoolSubject () {
+        return null;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.689E33F0-65ED-8D18-46E7-930BC4BFEADC]
+    // </editor-fold> 
+    public void setSchoolSubject (List val) {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.171917B9-59B2-6B23-2D69-99456048BC06]
+    // </editor-fold> 
+    public int getYearName () {
+        return yearName;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.10C3E2A8-8886-1A81-26A9-A2BEA730CBCF]
+    // </editor-fold> 
+    public void setYearName (int val) {
+        this.yearName = val;
+    }
+
+}
+

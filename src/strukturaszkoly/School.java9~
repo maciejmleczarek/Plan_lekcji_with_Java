@@ -1,0 +1,200 @@
+package strukturaszkoly;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+import java.util.Set;
+// #[regen=yes,id=DCE.761FE7D5-7C71-A04D-EAE0-E48127F789B8]
+// </editor-fold> 
+public class School {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.E8D8824C-1A29-722D-12FF-7DAB4F8D0A83]
+    // </editor-fold> 
+    private String schoolType;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.19903A9C-689E-7E16-749C-8BF921DC937A]
+    // </editor-fold> 
+    private int maxDayHours;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.D46BB58C-234C-99E6-70B0-E691EED9D684]
+    // </editor-fold> 
+    private List<Classroom> mClassroom;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.08FB0851-1D0B-60BC-CFF0-11186D2E0936]
+    // </editor-fold> 
+    private List<Teacher> mTeacher;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.768F2D3F-AD9D-5D9F-AFAB-629DD1612891]
+    // </editor-fold> 
+    private List<SchoolGroup> mSchoolGroup;
+
+    private String [] classTypes = new String[15];
+    private String [] primaryClassTypes = new String[15];
+    private String [] gymnasiumClassTypes = new String[15];
+    
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.E3DF0FD4-DD03-2143-4530-9B98CD54394C]
+    // </editor-fold> 
+    public List getClassroom () {
+        return mClassroom;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.A5C550F3-7D24-75A5-8FC2-966E3542C36E]
+    // </editor-fold> 
+    public void setClassroom (List val) {
+        this.mClassroom = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.9F36FA7F-55A0-C57C-8F75-270A8262F7B4]
+    // </editor-fold> 
+    public List getSchoolYear () {
+        return mSchoolGroup;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.1B6B6999-C228-3218-1629-8742633527BC]
+    // </editor-fold> 
+    public void setSchoolYear (List val) {
+        this.mSchoolGroup = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.ED412CFF-7BD4-4D63-D291-F93BEC73F50F]
+    // </editor-fold> 
+    public List getTeacher () {
+        return mTeacher;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.7C0203A6-2F22-E094-E976-0A527F192F17]
+    // </editor-fold> 
+    public void setTeacher (List val) {
+        this.mTeacher = val;
+        
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.884B2F64-D7C8-D41C-C495-AD18DDF8FF9E]
+    // </editor-fold> 
+    public int getMaxDayHours () {
+        return maxDayHours;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.7661C425-A819-E714-4E6E-9F7B8C62BB99]
+    // </editor-fold> 
+    public void setMaxDayHours (int val) {
+        this.maxDayHours = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.9FAEDE8E-204C-AB74-0A21-E285A8207537]
+    // </editor-fold> 
+    public String getSchoolType () {
+        return schoolType;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.8C21069C-E328-CF76-B7F7-6167BDA9AD57]
+    // </editor-fold> 
+    public void setSchoolType (String val) {
+        this.schoolType = val;
+        if (val.equals("primary")) {
+            this.classTypes = this.primaryClassTypes;
+        }
+        else {
+            this.classTypes = this.gymnasiumClassTypes;
+        }
+    }
+    
+    public String[] getClassTypes () {
+        return this.classTypes;
+    }
+    
+    public void addClassroom (Classroom classroom) {
+        this.mClassroom.add(classroom);
+    }
+    public void remClassroom (Classroom classroom){
+        this.mClassroom.remove(classroom);
+    }
+    
+    public String[] getClassNames () {
+        System.out.print("Pobieram nazwy");
+        String [] names = new String[mClassroom.size()];
+        for(int i = 0;i<mClassroom.size();i++) {
+            names[i] = mClassroom.get(i).getName();
+        }
+        return names;
+    }
+    
+    public Classroom getClassromByName(String name) {
+         for(int i = 0;i<mClassroom.size();i++) {
+            if (mClassroom.get(i).getName().equals(name)) {
+                System.out.print(i);
+                return mClassroom.get(i);
+            }
+        }
+         return null;
+    }
+    
+private void addProperSchoolYears (String schoolType) {
+    if (schoolType.equalsIgnoreCase("primary")) {
+   //     this.mSchoolGroup.add(new SchoolGroup(1, schoolSubjectname, language, schoolType)));
+    }
+}
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.A299ED6C-5655-75A7-6C50-1A14F05D28D1]
+    // </editor-fold> 
+    public School () {
+        this.schoolType="primary";
+        this.maxDayHours=5;
+        this.mClassroom=new ArrayList<Classroom>();
+        this.mTeacher=new ArrayList<Teacher>();
+        this.mSchoolGroup=new ArrayList<SchoolGroup>();
+      //  this.
+        
+        this.primaryClassTypes[0] = "Ogólnodostępna";
+        this.primaryClassTypes[1] = "Religia";
+        this.primaryClassTypes[2] = "Język polski";
+        this.primaryClassTypes[3] = "Historia";
+        this.primaryClassTypes[4] = "Język obcy";
+        this.primaryClassTypes[5] = "Matematyka";
+        this.primaryClassTypes[6] = "Przyroda";
+        this.primaryClassTypes[7] = "Muzyka";
+        this.primaryClassTypes[8] = "Plastyka";
+        this.primaryClassTypes[9] = "Technika";
+        this.primaryClassTypes[10] = "Informatyka";
+        this.primaryClassTypes[11] = "WF";
+        this.gymnasiumClassTypes[0] = "Ogólnodostępna";
+        this.gymnasiumClassTypes[1] = "Język polski";
+        this.gymnasiumClassTypes[2] = "Historia";
+        this.gymnasiumClassTypes[3] = "WOS";
+        this.gymnasiumClassTypes[4] = "Język obcy";
+        this.gymnasiumClassTypes[5] = "Matematyka";
+        this.gymnasiumClassTypes[6] = "Fizyka";
+        this.gymnasiumClassTypes[7] = "Chemia";
+        this.gymnasiumClassTypes[8] = "Biologia";
+        this.gymnasiumClassTypes[9] = "Geografia";
+        this.gymnasiumClassTypes[10] = "Plastyka";
+        this.gymnasiumClassTypes[11] = "Muzyka";
+        this.gymnasiumClassTypes[12] = "Technika";
+        this.gymnasiumClassTypes[13] = "Informatyka";
+        this.gymnasiumClassTypes[14] = "WF";
+        
+        
+        this.classTypes = this.primaryClassTypes;
+    }
+
+}
+

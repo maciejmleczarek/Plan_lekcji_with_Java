@@ -1,0 +1,33 @@
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.9D70510A-A040-51F8-9A2B-7205DD5529CB]
+// </editor-fold> 
+public class School {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.1D4B4D6F-2E67-74F6-36AD-382B192D8A10]
+    // </editor-fold> 
+    private Year mYear;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.36651B10-BA2E-15BB-1198-54792A7FC3BE]
+    // </editor-fold> 
+    public School () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.DD979EA8-1967-3F98-D45C-4744EC60C5BD]
+    // </editor-fold> 
+    public Year getYear () {
+        return mYear;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.057AB1D3-C190-1C4E-6C1A-ACB21482EA20]
+    // </editor-fold> 
+    public void setYear (Year val) {
+        this.mYear = val;
+    }
+
+}
+

@@ -1,0 +1,29 @@
+package strukturaszkoly;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.1A593E2E-18B8-F6DD-3961-5D19D14C0434]
+// </editor-fold> 
+public class SchoolGroup {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.80CEA804-16A5-BA9E-F09B-47565561356D]
+    // </editor-fold> 
+    private SchoolSubject mLanguageSubject;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.37F370A4-0C68-4523-5A37-CF8DA485F02C]
+    // </editor-fold> 
+    public SchoolSubject getLanguageSubject () {
+        return mLanguageSubject;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.903FA76A-ACBA-D732-D01E-57A618F8BD03]
+    // </editor-fold> 
+    public void setLanguageSubject (SchoolSubject val) {
+        this.mLanguageSubject = val;
+    }
+
+}
+

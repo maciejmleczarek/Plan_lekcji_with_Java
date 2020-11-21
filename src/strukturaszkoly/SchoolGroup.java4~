@@ -1,0 +1,29 @@
+package strukturaszkoly;
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.1A593E2E-18B8-F6DD-3961-5D19D14C0434]
+// </editor-fold> 
+public class SchoolGroup {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.69B8B10B-F557-2A48-4DDF-0A908845833D]
+    // </editor-fold> 
+    private Language mLanguage;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.CACC2493-2E28-84EE-5168-CAB5150FB3E9]
+    // </editor-fold> 
+    public Language getLanguage () {
+        return mLanguage;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.BC5E9704-20A1-F815-E30E-2D05B6FC79AD]
+    // </editor-fold> 
+    public void setLanguage (Language val) {
+        this.mLanguage = val;
+    }
+
+}
+
